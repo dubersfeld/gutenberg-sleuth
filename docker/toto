@@ -1,0 +1,695 @@
+Attaching to docker_rabbitmq-server_1, docker_zipkin-server_1, docker_config-server_1, docker_eurekaserver_1, docker_user-server_1, docker_books-mongodb_1, docker_book-server_1, docker_review-server_1, docker_order-server_1
+[33mzipkin-server_1    |[0m SLF4J: Class path contains multiple SLF4J bindings.
+[33mzipkin-server_1    |[0m SLF4J: Found binding in [jar:file:/app.jar!/BOOT-INF/lib/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[33mzipkin-server_1    |[0m SLF4J: Found binding in [jar:file:/app.jar!/BOOT-INF/lib/log4j-slf4j-impl-2.11.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[33mzipkin-server_1    |[0m SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[33mzipkin-server_1    |[0m SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[33mzipkin-server_1    |[0m                                     ********
+[33mzipkin-server_1    |[0m                                   **        **
+[33mzipkin-server_1    |[0m                                  *            *
+[33mzipkin-server_1    |[0m                                 **            **
+[33mzipkin-server_1    |[0m                                 **            **
+[33mzipkin-server_1    |[0m                                  **          **
+[33mzipkin-server_1    |[0m                                   **        **
+[33mzipkin-server_1    |[0m                                     ********
+[33mzipkin-server_1    |[0m                                       ****
+[33mzipkin-server_1    |[0m                                       ****
+[33mzipkin-server_1    |[0m         ****                          ****
+[33mzipkin-server_1    |[0m      ******                           ****                                 ***
+[33mzipkin-server_1    |[0m   ****************************************************************************
+[33mzipkin-server_1    |[0m     *******                           ****                                 ***
+[33mzipkin-server_1    |[0m         ****                          ****
+[33mzipkin-server_1    |[0m                                        **
+[33mzipkin-server_1    |[0m                                        **
+[33mzipkin-server_1    |[0m 
+[33mzipkin-server_1    |[0m 
+[33mzipkin-server_1    |[0m              *****      **     *****     ** **       **     **   **
+[33mzipkin-server_1    |[0m                **       **     **  *     ***         **     **** **
+[33mzipkin-server_1    |[0m               **        **     *****     ****        **     **  ***
+[33mzipkin-server_1    |[0m              ******     **     **        **  **      **     **   **
+[33mzipkin-server_1    |[0m 
+[33mzipkin-server_1    |[0m :: Powered by Spring Boot ::         (v2.1.1.RELEASE)
+[33mzipkin-server_1    |[0m 
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:19.523  INFO 7 --- [           main] com.dub.spring.Application               : Starting Application v0.0.1-SNAPSHOT on 892912aa28e9 with PID 7 (/app.jar started by root in /)
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:19.541 DEBUG 7 --- [           main] com.dub.spring.Application               : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:19.557  INFO 7 --- [           main] com.dub.spring.Application               : No active profile set, falling back to default profiles: default
+[32mconfig-server_1    |[0m ********************************************************
+[32mconfig-server_1    |[0m Waiting for the eureka server to start on port 8761
+[32mconfig-server_1    |[0m ********************************************************
+[35meurekaserver_1     |[0m ********************************************************
+[35meurekaserver_1     |[0m Starting Gutenberg Eureka Server
+[35meurekaserver_1     |[0m ********************************************************
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.957+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=1ca2eba111b0
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] db version v4.0.3
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] git version: 7ea530946fa7880364d88c8d8b6026bbc9ffa48c
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] modules: none
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] build environment:
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.973+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, security: { authorization: "enabled" }, storage: { mmapv1: { smallFiles: true } } }
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.974+0000 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.974+0000 I STORAGE  [initandlisten] 
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.974+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.974+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:16.974+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3385M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:18.823+0000 I STORAGE  [initandlisten] WiredTiger message [1547124618:823615][1:0x7f34f2762a00], txn-recover: Main recovery loop: starting at 89/11392
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:19.333+0000 I STORAGE  [initandlisten] WiredTiger message [1547124619:333332][1:0x7f34f2762a00], txn-recover: Recovering log 89 through 90
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:19.641+0000 I STORAGE  [initandlisten] WiredTiger message [1547124619:641492][1:0x7f34f2762a00], txn-recover: Recovering log 90 through 90
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:19.934+0000 I STORAGE  [initandlisten] WiredTiger message [1547124619:934395][1:0x7f34f2762a00], txn-recover: Set global recovery timestamp: 0
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.228+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.427+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.427+0000 W CONTROL  [initandlisten] 
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.427+0000 W CONTROL  [initandlisten] 
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.428+0000 I CONTROL  [initandlisten] 
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.645+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:50:20.648+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[35meurekaserver_1     |[0m 2019-01-10 12:50:26.263  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b39e3181] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[35meurekaserver_1     |[0m 
+[35meurekaserver_1     |[0m   .   ____          _            __ _ _
+[35meurekaserver_1     |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[35meurekaserver_1     |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[35meurekaserver_1     |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[35meurekaserver_1     |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[35meurekaserver_1     |[0m  =========|_|==============|___/=/_/_/_/
+[35meurekaserver_1     |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[35meurekaserver_1     |[0m 
+[35meurekaserver_1     |[0m 2019-01-10 12:50:28.310  INFO 7 --- [           main] com.dub.hello.Application                : No active profile set, falling back to default profiles: default
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:30.497 [info] <0.33.0> Application lager started on node 'rabbit@my-rabbit'
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:32.869  INFO 7 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:32.872 DEBUG 7 --- [           main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:32.876  INFO 7 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12893 ms
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:35.295 DEBUG 7 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[35meurekaserver_1     |[0m 2019-01-10 12:50:35.622  WARN 7 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:35.819  INFO 7 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:35.856 DEBUG 7 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:36.446 DEBUG 7 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:36.490 DEBUG 7 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/info, /prometheus] in 'viewControllerHandlerMapping'
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:36.540 DEBUG 7 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /zipkin/**] in 'resourceHandlerMapping'
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:36.620 DEBUG 7 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[35meurekaserver_1     |[0m 2019-01-10 12:50:37.689  INFO 7 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9bfcacc2-cecd-3da1-9181-6498b42294f4
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:37.977  INFO 7 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:38.318  INFO 7 --- [           main] org.xnio                                 : XNIO version 3.6.5.Final
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:38.399  INFO 7 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.6.5.Final
+[35meurekaserver_1     |[0m 2019-01-10 12:50:38.523  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b39e3181] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:38.708  INFO 7 --- [           main] org.jboss.threads                        : JBoss Threads version 2.3.2.Final
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:38.954  INFO 7 --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9411 (http) with context path ''
+[33mzipkin-server_1    |[0m 2019-01-10 12:50:38.975  INFO 7 --- [           main] com.dub.spring.Application               : Started Application in 23.212 seconds (JVM running for 25.926)
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.181  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.309  INFO 7 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.310  INFO 7 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.344  INFO 7 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.597  INFO 7 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.598  INFO 7 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12147 ms
+[35meurekaserver_1     |[0m 2019-01-10 12:50:40.999  WARN 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[35meurekaserver_1     |[0m 2019-01-10 12:50:41.000  INFO 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[35meurekaserver_1     |[0m 2019-01-10 12:50:41.068  INFO 7 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52e7a6b2
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.062 [info] <0.33.0> Application crypto started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.063 [info] <0.33.0> Application cowlib started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.063 [info] <0.33.0> Application xmerl started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.064 [info] <0.33.0> Application os_mon started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.066 [info] <0.33.0> Application inets started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.165 [info] <0.33.0> Application mnesia started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.165 [info] <0.33.0> Application jsx started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.167 [info] <0.33.0> Application recon started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.175 [info] <0.33.0> Application asn1 started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.175 [info] <0.33.0> Application public_key started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.176 [info] <0.33.0> Application ssl started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.176 [info] <0.33.0> Application ranch started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.176 [info] <0.33.0> Application ranch_proxy_protocol started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.195 [info] <0.33.0> Application cowboy started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.195 [info] <0.33.0> Application rabbit_common started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.198 [info] <0.238.0> 
+[36mrabbitmq-server_1  |[0m  Starting RabbitMQ 3.7.8 on Erlang 20.3.8.5
+[36mrabbitmq-server_1  |[0m  Copyright (C) 2007-2018 Pivotal Software, Inc.
+[36mrabbitmq-server_1  |[0m  Licensed under the MPL.  See http://www.rabbitmq.com/
+[36mrabbitmq-server_1  |[0m 
+[36mrabbitmq-server_1  |[0m   ##  ##
+[36mrabbitmq-server_1  |[0m   ##  ##      RabbitMQ 3.7.8. Copyright (C) 2007-2018 Pivotal Software, Inc.
+[36mrabbitmq-server_1  |[0m   ##########  Licensed under the MPL.  See http://www.rabbitmq.com/
+[36mrabbitmq-server_1  |[0m   ######  ##
+[36mrabbitmq-server_1  |[0m   ##########  Logs: <stdout>
+[36mrabbitmq-server_1  |[0m 
+[36mrabbitmq-server_1  |[0m               Starting broker...
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.201 [info] <0.238.0> 
+[36mrabbitmq-server_1  |[0m  node           : rabbit@my-rabbit
+[36mrabbitmq-server_1  |[0m  home dir       : /var/lib/rabbitmq
+[36mrabbitmq-server_1  |[0m  config file(s) : /etc/rabbitmq/rabbitmq.conf
+[36mrabbitmq-server_1  |[0m  cookie hash    : WUmxdmu2xL21Fwwra+mOWw==
+[36mrabbitmq-server_1  |[0m  log(s)         : <stdout>
+[36mrabbitmq-server_1  |[0m  database dir   : /var/lib/rabbitmq/mnesia/rabbit@my-rabbit
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.960 [info] <0.266.0> Memory high watermark set to 3118 MiB (3269581209 bytes) of 7795 MiB (8173953024 bytes) total
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.970 [info] <0.268.0> Enabling free disk space monitoring
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.970 [info] <0.268.0> Disk free limit set to 50MB
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.984 [info] <0.271.0> Limiting to approx 1048476 file handles (943626 sockets)
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.984 [info] <0.272.0> FHC read buffering:  OFF
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:42.984 [info] <0.272.0> FHC write buffering: ON
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.034 [info] <0.238.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.143 [info] <0.238.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.143 [info] <0.238.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.145 [info] <0.238.0> Priority queues enabled, real BQ is rabbit_variable_queue
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.202 [info] <0.294.0> Starting rabbit_node_monitor
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.250 [info] <0.238.0> Management plugin: using rates mode 'basic'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.252 [info] <0.326.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@my-rabbit/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.310 [info] <0.326.0> Starting message stores for vhost '/'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.310 [info] <0.330.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.320 [info] <0.326.0> Started message store of type transient for vhost '/'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.321 [info] <0.333.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.325 [info] <0.326.0> Started message store of type persistent for vhost '/'
+[35meurekaserver_1     |[0m 2019-01-10 12:50:43.341  INFO 7 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.345 [info] <0.370.0> started TCP Listener on [::]:5672
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.351 [info] <0.238.0> Setting up a table for connection tracking on this node: 'tracked_connection_on_node_rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.352 [info] <0.238.0> Setting up a table for per-vhost connection counting on this node: 'tracked_connection_per_vhost_on_node_rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.352 [info] <0.33.0> Application rabbit started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.353 [info] <0.33.0> Application amqp_client started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.361 [info] <0.33.0> Application rabbitmq_management_agent started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.362 [info] <0.33.0> Application rabbitmq_web_dispatch started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.407 [info] <0.425.0> Management plugin started. Port: 15672
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.407 [info] <0.531.0> Statistics database started.
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.411 [info] <0.33.0> Application rabbitmq_management started on node 'rabbit@my-rabbit'
+[36mrabbitmq-server_1  |[0m  completed with 3 plugins.
+[36mrabbitmq-server_1  |[0m 2019-01-10 12:50:43.787 [info] <0.5.0> Server startup complete; 3 plugins started.
+[36mrabbitmq-server_1  |[0m  * rabbitmq_management
+[36mrabbitmq-server_1  |[0m  * rabbitmq_web_dispatch
+[36mrabbitmq-server_1  |[0m  * rabbitmq_management_agent
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[35meurekaserver_1     |[0m 2019-01-10 12:50:45.030  WARN 7 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+[35meurekaserver_1     |[0m 2019-01-10 12:50:45.031  WARN 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[35meurekaserver_1     |[0m 2019-01-10 12:50:45.032  INFO 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[35meurekaserver_1     |[0m 2019-01-10 12:50:45.574  INFO 7 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[35meurekaserver_1     |[0m 2019-01-10 12:50:47.196  INFO 7 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.340  INFO 7 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.581  INFO 7 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.589  INFO 7 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.604  INFO 7 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.607  INFO 7 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.646  INFO 7 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.647  INFO 7 --- [      Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.683  INFO 7 --- [      Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+[32mconfig-server_1    |[0m ******* Eureka Server has started
+[32mconfig-server_1    |[0m ********************************************************
+[32mconfig-server_1    |[0m Starting Configuration Service with Eureka Endpoint:  http://eurekaserver:8761/eureka/
+[32mconfig-server_1    |[0m ********************************************************
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.748  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.754  INFO 7 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+[35meurekaserver_1     |[0m 2019-01-10 12:50:48.764  INFO 7 --- [           main] com.dub.hello.Application                : Started Application in 29.299 seconds (JVM running for 33.749)
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:50:54.708  INFO 33 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c6a3581] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mconfig-server_1    |[0m 
+[32mconfig-server_1    |[0m   .   ____          _            __ _ _
+[32mconfig-server_1    |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32mconfig-server_1    |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32mconfig-server_1    |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32mconfig-server_1    |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32mconfig-server_1    |[0m  =========|_|==============|___/=/_/_/_/
+[32mconfig-server_1    |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[32mconfig-server_1    |[0m 
+[32mconfig-server_1    |[0m 2019-01-10 12:50:55.378  INFO 33 --- [           main] com.dub.confsvr.Application              : The following profiles are active: native
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:50:58.057  WARN 33 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[32mconfig-server_1    |[0m 2019-01-10 12:50:58.966  INFO 33 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c6de38c6-0ad7-3cfa-98bd-e6e4dc69d83d
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:50:59.350  INFO 33 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c6a3581] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32;1morder-server_1     |[0m ********************************************************
+[32;1morder-server_1     |[0m Waiting for the configuration server to start on port 8888
+[32;1morder-server_1     |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.563  INFO 33 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.688  INFO 33 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.689  INFO 33 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.729  INFO 33 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.990  INFO 33 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32mconfig-server_1    |[0m 2019-01-10 12:51:00.991  INFO 33 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5539 ms
+[32mconfig-server_1    |[0m 2019-01-10 12:51:01.346  WARN 33 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[32mconfig-server_1    |[0m 2019-01-10 12:51:01.346  INFO 33 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[32mconfig-server_1    |[0m 2019-01-10 12:51:01.396  INFO 33 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1fb19a0
+[32mconfig-server_1    |[0m 2019-01-10 12:51:02.531  WARN 33 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[32mconfig-server_1    |[0m 2019-01-10 12:51:02.532  INFO 33 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[32mconfig-server_1    |[0m 2019-01-10 12:51:02.965  INFO 33 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[31muser-server_1      |[0m ********************************************************
+[31muser-server_1      |[0m Waiting for the configuration server to start on port 8888
+[31muser-server_1      |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:51:05.201  INFO 33 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+[32mconfig-server_1    |[0m 2019-01-10 12:51:05.473  INFO 33 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+[32mconfig-server_1    |[0m 2019-01-10 12:51:05.610  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+[36;1mbook-server_1      |[0m ********************************************************
+[36;1mbook-server_1      |[0m Waiting for the configuration server to start on port 8888
+[36;1mbook-server_1      |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:51:06.114  INFO 33 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+[32mconfig-server_1    |[0m 2019-01-10 12:51:06.115  INFO 33 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+[32mconfig-server_1    |[0m 2019-01-10 12:51:06.558  INFO 33 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+[32mconfig-server_1    |[0m 2019-01-10 12:51:06.559  INFO 33 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.148  INFO 33 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[33;1mreview-server_1    |[0m ********************************************************
+[33;1mreview-server_1    |[0m Waiting for the configuration server to start on port 8888
+[33;1mreview-server_1    |[0m ********************************************************
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.210  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+[35meurekaserver_1     |[0m 2019-01-10 12:51:07.526  INFO 7 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[35meurekaserver_1     |[0m 2019-01-10 12:51:07.526  INFO 7 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[35meurekaserver_1     |[0m 2019-01-10 12:51:07.564  INFO 7 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 38 ms
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.930  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.956  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.966  INFO 33 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.979  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1547124667975 with initial instances count: 0
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.982  INFO 33 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONFIG-SERVER with eureka with status UP
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.984  INFO 33 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1547124667984, current=UP, previous=STARTING]
+[32mconfig-server_1    |[0m 2019-01-10 12:51:07.990  INFO 33 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/75fdd0411e95:config-server:8888: registering service...
+[32;1morder-server_1     |[0m Config Server config-server up and running at 8888
+[32mconfig-server_1    |[0m 2019-01-10 12:51:08.288  INFO 33 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+[32mconfig-server_1    |[0m 2019-01-10 12:51:08.329  INFO 33 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8888
+[32mconfig-server_1    |[0m 2019-01-10 12:51:08.342  INFO 33 --- [           main] com.dub.confsvr.Application              : Started Application in 17.198 seconds (JVM running for 19.645)
+[32mconfig-server_1    |[0m 2019-01-10 12:51:08.514  INFO 33 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/75fdd0411e95:config-server:8888 - registration status: 204
+[31muser-server_1      |[0m Config Server config-server up and running at 8888
+[31muser-server_1      |[0m RabbitMQ Server rabbitmq-server up and running at 5672
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:12.023+0000 I NETWORK  [listener] connection accepted from 172.21.0.6:46652 #1 (1 connection now open)
+[31muser-server_1      |[0m MongoDB Server books-mongodb up and running at 27017
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:12.023+0000 I NETWORK  [conn1] end connection 172.21.0.6:46652 (0 connections now open)
+[32;1morder-server_1     |[0m 2019-01-10 12:51:13.552  INFO [foutre-service,,,] 20 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc9f434a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[36;1mbook-server_1      |[0m Config Server config-server up and running at 8888
+[36;1mbook-server_1      |[0m RabbitMQ Server rabbitmq-server up and running at 5672
+[36;1mbook-server_1      |[0m MongoDB Server books-mongodb up and running at 27017
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:13.803+0000 I NETWORK  [listener] connection accepted from 172.21.0.8:39854 #2 (1 connection now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:13.804+0000 I NETWORK  [conn2] end connection 172.21.0.8:39854 (0 connections now open)
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m   .   ____          _            __ _ _
+[32;1morder-server_1     |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32;1morder-server_1     |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32;1morder-server_1     |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32;1morder-server_1     |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32;1morder-server_1     |[0m  =========|_|==============|___/=/_/_/_/
+[32;1morder-server_1     |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m 2019-01-10 12:51:14.572  INFO [foutre-service,,,] 20 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://config-server:8888
+[33;1mreview-server_1    |[0m Config Server config-server up and running at 8888
+[33;1mreview-server_1    |[0m RabbitMQ Server rabbitmq-server up and running at 5672
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:15.202+0000 I NETWORK  [listener] connection accepted from 172.21.0.9:43680 #3 (1 connection now open)
+[33;1mreview-server_1    |[0m MongoDB Server books-mongodb up and running at 27017
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:51:15.203+0000 I NETWORK  [conn3] end connection 172.21.0.9:43680 (0 connections now open)
+[32mconfig-server_1    |[0m 2019-01-10 12:51:15.437  INFO 33 --- [nio-8888-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32mconfig-server_1    |[0m 2019-01-10 12:51:15.438  INFO 33 --- [nio-8888-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[32mconfig-server_1    |[0m 2019-01-10 12:51:15.515  INFO 33 --- [nio-8888-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 76 ms
+[32mconfig-server_1    |[0m 2019-01-10 12:51:16.469  INFO 33 --- [nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///tmp/config-repo/foutre-service-dev.yml
+[32;1morder-server_1     |[0m 2019-01-10 12:51:17.157  INFO [foutre-service,,,] 20 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=foutre-service, profiles=[dev], label=null, version=null, state=null
+[32;1morder-server_1     |[0m 2019-01-10 12:51:17.158  INFO [foutre-service,,,] 20 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='file:///tmp/config-repo/foutre-service-dev.yml'}]}
+[32;1morder-server_1     |[0m 2019-01-10 12:51:17.683  INFO [foutre-service,,,] 20 --- [           main] com.dub.spring.Application               : The following profiles are active: dev
+[32;1morder-server_1     |[0m 2019-01-10 12:51:26.095  INFO [foutre-service,,,] 20 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[32;1morder-server_1     |[0m 2019-01-10 12:51:27.027  INFO [foutre-service,,,] 20 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 874ms. Found 1 repository interfaces.
+[31muser-server_1      |[0m 2019-01-10 12:51:28.767  INFO [user-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$478292e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31muser-server_1      |[0m 
+[31muser-server_1      |[0m   .   ____          _            __ _ _
+[31muser-server_1      |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[31muser-server_1      |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[31muser-server_1      |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[31muser-server_1      |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[31muser-server_1      |[0m  =========|_|==============|___/=/_/_/_/
+[31muser-server_1      |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[31muser-server_1      |[0m 
+[31muser-server_1      |[0m 2019-01-10 12:51:30.503  INFO [user-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://config-server:8888
+[32;1morder-server_1     |[0m 2019-01-10 12:51:31.797  INFO [foutre-service,,,] 20 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a3c535e0-cf50-3218-bf27-46a97b2b1511
+[32mconfig-server_1    |[0m 2019-01-10 12:51:32.422  INFO 33 --- [nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///tmp/config-repo/user-service-dev.yml
+[31muser-server_1      |[0m 2019-01-10 12:51:32.958  INFO [user-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=user-service, profiles=[dev], label=null, version=null, state=null
+[31muser-server_1      |[0m 2019-01-10 12:51:32.964  INFO [user-service,,,] 23 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='file:///tmp/config-repo/user-service-dev.yml'}]}
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:33.405  INFO [book-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$25b1001e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31muser-server_1      |[0m 2019-01-10 12:51:33.868  INFO [user-service,,,] 23 --- [           main] com.dub.spring.Application               : The following profiles are active: dev
+[36;1mbook-server_1      |[0m 
+[36;1mbook-server_1      |[0m   .   ____          _            __ _ _
+[36;1mbook-server_1      |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[36;1mbook-server_1      |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[36;1mbook-server_1      |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[36;1mbook-server_1      |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[36;1mbook-server_1      |[0m  =========|_|==============|___/=/_/_/_/
+[36;1mbook-server_1      |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[36;1mbook-server_1      |[0m 
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:34.607  INFO [review-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$50ca8fb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:34.910  INFO [book-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://config-server:8888
+[33;1mreview-server_1    |[0m 
+[33;1mreview-server_1    |[0m   .   ____          _            __ _ _
+[33;1mreview-server_1    |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[33;1mreview-server_1    |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[33;1mreview-server_1    |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[33;1mreview-server_1    |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[33;1mreview-server_1    |[0m  =========|_|==============|___/=/_/_/_/
+[33;1mreview-server_1    |[0m  :: Spring Boot ::        (v2.1.1.RELEASE)
+[33;1mreview-server_1    |[0m 
+[32mconfig-server_1    |[0m 2019-01-10 12:51:35.992  INFO 33 --- [nio-8888-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///tmp/config-repo/book-service-dev.yml
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:36.190  INFO [book-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=book-service, profiles=[dev], label=null, version=null, state=null
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:36.196  INFO [book-service,,,] 23 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='file:///tmp/config-repo/book-service-dev.yml'}]}
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:36.342  INFO [review-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://config-server:8888
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:37.054  INFO [book-service,,,] 23 --- [           main] com.dub.spring.Application               : The following profiles are active: dev
+[32;1morder-server_1     |[0m 2019-01-10 12:51:37.373  INFO [foutre-service,,,] 20 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc9f434a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.686  INFO 33 --- [nio-8888-exec-9] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///tmp/config-repo/review-service-dev.yml
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:37.889  INFO [review-service,,,] 23 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=review-service, profiles=[dev], label=null, version=null, state=null
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:37.890  INFO [review-service,,,] 23 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='file:///tmp/config-repo/review-service-dev.yml'}]}
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.959  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+[32mconfig-server_1    |[0m 2019-01-10 12:51:37.960  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+[32mconfig-server_1    |[0m 2019-01-10 12:51:38.598  INFO 33 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:38.928  INFO [review-service,,,] 23 --- [           main] com.dub.spring.Application               : The following profiles are active: dev
+[31muser-server_1      |[0m 2019-01-10 12:51:42.697  INFO [user-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[32;1morder-server_1     |[0m 2019-01-10 12:51:43.445  INFO [foutre-service,,,] 20 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+[31muser-server_1      |[0m 2019-01-10 12:51:43.549  INFO [user-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 837ms. Found 1 repository interfaces.
+[32;1morder-server_1     |[0m 2019-01-10 12:51:43.893  INFO [foutre-service,,,] 20 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[32;1morder-server_1     |[0m 2019-01-10 12:51:43.898  INFO [foutre-service,,,] 20 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[32;1morder-server_1     |[0m 2019-01-10 12:51:43.979  INFO [foutre-service,,,] 20 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[32;1morder-server_1     |[0m 2019-01-10 12:51:44.818  INFO [foutre-service,,,] 20 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32;1morder-server_1     |[0m 2019-01-10 12:51:44.818  INFO [foutre-service,,,] 20 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 26790 ms
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:46.592  INFO [book-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:47.734  INFO [book-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1106ms. Found 2 repository interfaces.
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:48.841  INFO [review-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[31muser-server_1      |[0m 2019-01-10 12:51:49.051  INFO [user-service,,,] 23 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c023c42d-a61d-388c-a2c0-ff11a8655537
+[32;1morder-server_1     |[0m 2019-01-10 12:51:49.125  WARN [foutre-service,,,] 20 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestOperations' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[32;1morder-server_1     |[0m 2019-01-10 12:51:50.176  WARN [foutre-service,,,] 20 --- [           main] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+[32;1morder-server_1     |[0m 2019-01-10 12:51:50.178  INFO [foutre-service,,,] 20 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[32;1morder-server_1     |[0m 2019-01-10 12:51:50.318  WARN [foutre-service,,,] 20 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2205a05d}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+[32;1morder-server_1     |[0m  org.apache.catalina.loader.WebappClassLoaderBase.binaryNameToPath(WebappClassLoaderBase.java:2390)
+[32;1morder-server_1     |[0m  org.apache.catalina.loader.WebappClassLoaderBase.findLoadedClass0(WebappClassLoaderBase.java:2446)
+[32;1morder-server_1     |[0m  org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.findExistingLoadedClass(TomcatEmbeddedWebappClassLoader.java:77)
+[32;1morder-server_1     |[0m  org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:67)
+[32;1morder-server_1     |[0m  org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+[32;1morder-server_1     |[0m  org.springframework.core.annotation.AnnotationAttributes.getAnnotationType(AnnotationAttributes.java:136)
+[32;1morder-server_1     |[0m  org.springframework.core.annotation.AnnotationAttributes.<init>(AnnotationAttributes.java:127)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.<init>(AnnotationAttributesReadingVisitor.java:56)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.MethodMetadataReadingVisitor.visitAnnotation(MethodMetadataReadingVisitor.java:84)
+[32;1morder-server_1     |[0m  org.springframework.asm.ClassReader.readMethod(ClassReader.java:1175)
+[32;1morder-server_1     |[0m  org.springframework.asm.ClassReader.accept(ClassReader.java:679)
+[32;1morder-server_1     |[0m  org.springframework.asm.ClassReader.accept(ClassReader.java:391)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:65)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123)
+[32;1morder-server_1     |[0m  org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:399)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:317)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:361)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:263)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:589)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:302)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+[32;1morder-server_1     |[0m  org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+[32;1morder-server_1     |[0m  org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+[32;1morder-server_1     |[0m  org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+[32;1morder-server_1     |[0m  org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+[32;1morder-server_1     |[0m  org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+[32;1morder-server_1     |[0m  org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:120)
+[32;1morder-server_1     |[0m  org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:88)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.SpringClientFactory.getContext(SpringClientFactory.java:118)
+[32;1morder-server_1     |[0m  org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:129)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.SpringClientFactory.getInstance(SpringClientFactory.java:108)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.SpringClientFactory.getLoadBalancer(SpringClientFactory.java:57)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.getLoadBalancer(RibbonLoadBalancerClient.java:179)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.choose(RibbonLoadBalancerClient.java:83)
+[32;1morder-server_1     |[0m  org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.choose(RibbonLoadBalancerClient.java:76)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.LoadBalancerClientZipkinLoadBalancer.instance(LoadBalancerClientZipkinLoadBalancer.java:43)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$1.zipkinUrl(ZipkinRestTemplateSenderConfiguration.java:118)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:148)
+[32;1morder-server_1     |[0m  org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:636)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:128)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:141)
+[32;1morder-server_1     |[0m  org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:131)
+[32;1morder-server_1     |[0m  zipkin2.Call$Base.execute(Call.java:379)
+[32;1morder-server_1     |[0m  zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:286)
+[32;1morder-server_1     |[0m  zipkin2.reporter.AsyncReporter$Builder$1.run(AsyncReporter.java:190)
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:50.452  INFO [review-service,,,] 23 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1432ms. Found 1 repository interfaces.
+[32;1morder-server_1     |[0m 2019-01-10 12:51:50.807  INFO [foutre-service,,,] 20 --- [           main] ConditionEvaluationReportLoggingListener : 
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[32;1morder-server_1     |[0m Exception in thread "AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2205a05d}" java.lang.IllegalStateException: Error processing condition on org.springframework.cloud.netflix.ribbon.RestClientRibbonConfiguration
+[32;1morder-server_1     |[0m 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:447)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:128)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:117)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:327)
+[32;1morder-server_1     |[0m 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+[32;1morder-server_1     |[0m 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+[32;1morder-server_1     |[0m 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+[32;1morder-server_1     |[0m 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:691)
+[32;1morder-server_1     |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:120)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:88)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getContext(SpringClientFactory.java:118)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:129)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getInstance(SpringClientFactory.java:108)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getLoadBalancer(SpringClientFactory.java:57)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.getLoadBalancer(RibbonLoadBalancerClient.java:179)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.choose(RibbonLoadBalancerClient.java:83)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.choose(RibbonLoadBalancerClient.java:76)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.LoadBalancerClientZipkinLoadBalancer.instance(LoadBalancerClientZipkinLoadBalancer.java:43)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$1.zipkinUrl(ZipkinRestTemplateSenderConfiguration.java:118)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:148)
+[32;1morder-server_1     |[0m 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:636)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:128)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:141)
+[32;1morder-server_1     |[0m 	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:131)
+[32;1morder-server_1     |[0m 	at zipkin2.Call$Base.execute(Call.java:379)
+[32;1morder-server_1     |[0m 	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:286)
+[32;1morder-server_1     |[0m 	at zipkin2.reporter.AsyncReporter$Builder$1.run(AsyncReporter.java:190)
+[32;1morder-server_1     |[0m Caused by: java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org/springframework/cloud/netflix/ribbon/RibbonAutoConfiguration$OnRibbonRestClientCondition.class]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+[32;1morder-server_1     |[0m 	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1348)
+[32;1morder-server_1     |[0m 	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1084)
+[32;1morder-server_1     |[0m 	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:174)
+[32;1morder-server_1     |[0m 	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+[32;1morder-server_1     |[0m 	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+[32;1morder-server_1     |[0m 	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+[32;1morder-server_1     |[0m 	at org.springframework.boot.autoconfigure.condition.AbstractNestedCondition$MemberConditions.getMetadata(AbstractNestedCondition.java:138)
+[32;1morder-server_1     |[0m 	at org.springframework.boot.autoconfigure.condition.AbstractNestedCondition$MemberConditions.<init>(AbstractNestedCondition.java:117)
+[32;1morder-server_1     |[0m 	at org.springframework.boot.autoconfigure.condition.AbstractNestedCondition.getMatchOutcome(AbstractNestedCondition.java:64)
+[32;1morder-server_1     |[0m 	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+[32;1morder-server_1     |[0m 	... 29 more
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:52.910  INFO [book-service,,,] 23 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=82ebf717-a4be-3fc5-a7d9-17c8b7b4a0fd
+[32;1morder-server_1     |[0m 2019-01-10 12:51:53.548 ERROR [foutre-service,,,] 20 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m ***************************
+[32;1morder-server_1     |[0m APPLICATION FAILED TO START
+[32;1morder-server_1     |[0m ***************************
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m Description:
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m Field restTemplate in com.dub.spring.services.OrderServiceImpl required a bean of type 'org.springframework.web.client.RestOperations' that could not be found.
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m The injection point has the following annotations:
+[32;1morder-server_1     |[0m 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m Action:
+[32;1morder-server_1     |[0m 
+[32;1morder-server_1     |[0m Consider defining a bean of type 'org.springframework.web.client.RestOperations' in your configuration.
+[32;1morder-server_1     |[0m 
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:55.147  INFO [review-service,,,] 23 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=396ae507-b36f-3f9e-9568-a93a597816c8
+[32;1mdocker_order-server_1 exited with code 1
+[0m[31muser-server_1      |[0m 2019-01-10 12:51:55.811  INFO [user-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$478292e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[36;1mbook-server_1      |[0m 2019-01-10 12:51:57.293  INFO [book-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$25b1001e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33;1mreview-server_1    |[0m 2019-01-10 12:51:58.764  INFO [review-service,,,] 23 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$50ca8fb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31muser-server_1      |[0m 2019-01-10 12:52:00.002  INFO [user-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+[31muser-server_1      |[0m 2019-01-10 12:52:00.274  INFO [user-service,,,] 23 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[31muser-server_1      |[0m 2019-01-10 12:52:00.283  INFO [user-service,,,] 23 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[31muser-server_1      |[0m 2019-01-10 12:52:00.401  INFO [user-service,,,] 23 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:00.758  INFO [book-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+[31muser-server_1      |[0m 2019-01-10 12:52:00.938  INFO [user-service,,,] 23 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[31muser-server_1      |[0m 2019-01-10 12:52:00.943  INFO [user-service,,,] 23 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 26891 ms
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:01.021  INFO [book-service,,,] 23 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:01.031  INFO [book-service,,,] 23 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:01.109  INFO [book-service,,,] 23 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:01.701  INFO [book-service,,,] 23 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:01.722  INFO [book-service,,,] 23 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 24321 ms
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:03.091  INFO [review-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:03.507  INFO [review-service,,,] 23 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:03.509  INFO [review-service,,,] 23 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:03.654  INFO [review-service,,,] 23 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:04.265  INFO [review-service,,,] 23 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:04.265  INFO [review-service,,,] 23 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 24818 ms
+[31muser-server_1      |[0m 2019-01-10 12:52:06.276  INFO [user-service,,,] 23 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[books-mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:06.780+0000 I NETWORK  [listener] connection accepted from 172.21.0.6:46676 #4 (1 connection now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:06.868+0000 I NETWORK  [conn4] received client metadata from 172.21.0.6:46676 conn4: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.15.0-43-generic" }, platform: "Java/Oracle Corporation/1.8.0_151-b12" }
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:06.879  INFO [book-service,,,] 23 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[books-mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[31muser-server_1      |[0m 2019-01-10 12:52:07.023  INFO [user-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:4}] to books-mongodb:27017
+[31muser-server_1      |[0m 2019-01-10 12:52:07.062  INFO [user-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=books-mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11814529}
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:07.202+0000 I NETWORK  [listener] connection accepted from 172.21.0.8:39874 #5 (2 connections now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:07.279+0000 I NETWORK  [conn5] received client metadata from 172.21.0.8:39874 conn5: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.15.0-43-generic" }, platform: "Java/Oracle Corporation/1.8.0_151-b12" }
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:07.467  INFO [book-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:5}] to books-mongodb:27017
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:07.590  INFO [book-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=books-mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32647188}
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:08.969  INFO [review-service,,,] 23 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[books-mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:09.112+0000 I NETWORK  [listener] connection accepted from 172.21.0.9:43696 #6 (3 connections now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:09.181+0000 I NETWORK  [conn6] received client metadata from 172.21.0.9:43696 conn6: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.15.0-43-generic" }, platform: "Java/Oracle Corporation/1.8.0_151-b12" }
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:09.337  INFO [review-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to books-mongodb:27017
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:09.402  INFO [review-service,,,] 23 --- [s-mongodb:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=books-mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 3]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21107273}
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:09.582+0000 I NETWORK  [listener] connection accepted from 172.21.0.6:46682 #7 (4 connections now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:09.600+0000 I NETWORK  [conn7] received client metadata from 172.21.0.6:46682 conn7: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.15.0-43-generic" }, platform: "Java/Oracle Corporation/1.8.0_151-b12" }
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:10.356+0000 I ACCESS   [conn7] Successfully authenticated as principal spring on booksonline
+[31muser-server_1      |[0m 2019-01-10 12:52:10.378  INFO [user-service,,,] 23 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:7}] to books-mongodb:27017
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:11.434  WARN [book-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:11.434  INFO [book-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:11.485  WARN [book-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:11.485  INFO [book-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[31muser-server_1      |[0m 2019-01-10 12:52:11.670  WARN [user-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[31muser-server_1      |[0m 2019-01-10 12:52:11.671  INFO [user-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[31muser-server_1      |[0m 2019-01-10 12:52:11.705  WARN [user-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[31muser-server_1      |[0m 2019-01-10 12:52:11.705  INFO [user-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:12.209+0000 I NETWORK  [listener] connection accepted from 172.21.0.9:43700 #8 (5 connections now open)
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:12.218+0000 I NETWORK  [conn8] received client metadata from 172.21.0.9:43700 conn8: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.15.0-43-generic" }, platform: "Java/Oracle Corporation/1.8.0_151-b12" }
+[34mbooks-mongodb_1    |[0m 2019-01-10T12:52:12.893+0000 I ACCESS   [conn8] Successfully authenticated as principal spring on booksonline
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:12.906  INFO [review-service,,,] 23 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:8}] to books-mongodb:27017
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:14.534  INFO [book-service,,,] 23 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:14.573  WARN [review-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:14.583  INFO [review-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:14.632  WARN [review-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:14.632  INFO [review-service,,,] 23 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[31muser-server_1      |[0m 2019-01-10 12:52:14.899  INFO [user-service,,,] 23 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:18.313  INFO [review-service,,,] 23 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[31muser-server_1      |[0m 2019-01-10 12:52:22.734  INFO [user-service,,,] 23 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:22.830  INFO [book-service,,,] 23 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+[31muser-server_1      |[0m 2019-01-10 12:52:23.047  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:23.324  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+[31muser-server_1      |[0m 2019-01-10 12:52:23.840  INFO [user-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+[31muser-server_1      |[0m 2019-01-10 12:52:23.847  INFO [user-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:24.249  INFO [book-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:24.249  INFO [book-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:25.686  INFO [book-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:25.686  INFO [book-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+[31muser-server_1      |[0m 2019-01-10 12:52:25.820  INFO [user-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+[31muser-server_1      |[0m 2019-01-10 12:52:25.820  INFO [user-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:26.285  INFO [review-service,,,] 23 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:26.567  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:27.133  INFO [review-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:27.136  INFO [review-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:28.003  INFO [review-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:28.004  INFO [review-service,,,] 23 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+[31muser-server_1      |[0m 2019-01-10 12:52:28.549  INFO [user-service,,,] 23 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[31muser-server_1      |[0m 2019-01-10 12:52:28.668  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+[31muser-server_1      |[0m 2019-01-10 12:52:28.668  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+[31muser-server_1      |[0m 2019-01-10 12:52:28.673  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+[31muser-server_1      |[0m 2019-01-10 12:52:28.674  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+[31muser-server_1      |[0m 2019-01-10 12:52:28.675  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+[31muser-server_1      |[0m 2019-01-10 12:52:28.677  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+[31muser-server_1      |[0m 2019-01-10 12:52:28.680  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.033  INFO [book-service,,,] 23 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.195  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.196  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.201  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.202  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.205  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.206  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:29.206  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+[31muser-server_1      |[0m 2019-01-10 12:52:29.715  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[31muser-server_1      |[0m 2019-01-10 12:52:29.748  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+[31muser-server_1      |[0m 2019-01-10 12:52:29.765  INFO [user-service,,,] 23 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+[31muser-server_1      |[0m 2019-01-10 12:52:29.844  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1547124749820 with initial instances count: 1
+[31muser-server_1      |[0m 2019-01-10 12:52:29.905  INFO [user-service,,,] 23 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+[31muser-server_1      |[0m 2019-01-10 12:52:29.908  INFO [user-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1547124749907, current=UP, previous=STARTING]
+[31muser-server_1      |[0m 2019-01-10 12:52:29.949  INFO [user-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/666cedcab3f4:user-service:8084: registering service...
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.214  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.234  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.254  INFO [book-service,,,] 23 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.279  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1547124750263 with initial instances count: 1
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.351  INFO [book-service,,,] 23 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOOK-SERVICE with eureka with status UP
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.354  INFO [book-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1547124750353, current=UP, previous=STARTING]
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.373  INFO [book-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE/5c3f254ca55f:book-service:8081: registering service...
+[31muser-server_1      |[0m 2019-01-10 12:52:30.379  INFO [user-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/666cedcab3f4:user-service:8084 - registration status: 204
+[31muser-server_1      |[0m 2019-01-10 12:52:30.420  INFO [user-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+[31muser-server_1      |[0m 2019-01-10 12:52:30.428  INFO [user-service,,,] 23 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+[31muser-server_1      |[0m 2019-01-10 12:52:30.447  INFO [user-service,,,] 23 --- [           main] com.dub.spring.Application               : Started Application in 75.461 seconds (JVM running for 78.401)
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.555  INFO [review-service,,,] 23 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.722  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.727  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.728  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.729  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.730  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.730  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.735  INFO [book-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE/5c3f254ca55f:book-service:8081 - registration status: 204
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:30.735  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.817  INFO [book-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.830  INFO [book-service,,,] 23 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+[36;1mbook-server_1      |[0m 2019-01-10 12:52:30.851  INFO [book-service,,,] 23 --- [           main] com.dub.spring.Application               : Started Application in 72.863 seconds (JVM running for 77.038)
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.300  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.313  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.324  INFO [review-service,,,] 23 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.337  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1547124751332 with initial instances count: 1
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.380  INFO [review-service,,,] 23 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW-SERVICE with eureka with status UP
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.382  INFO [review-service,,,] 23 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1547124751382, current=UP, previous=STARTING]
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.394  INFO [review-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW-SERVICE/fe1091b5b07a:review-service:8082: registering service...
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.595  INFO [review-service,,,] 23 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW-SERVICE/fe1091b5b07a:review-service:8082 - registration status: 204
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.615  INFO [review-service,,,] 23 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.621  INFO [review-service,,,] 23 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+[33;1mreview-server_1    |[0m 2019-01-10 12:52:31.627  INFO [review-service,,,] 23 --- [           main] com.dub.spring.Application               : Started Application in 70.929 seconds (JVM running for 76.409)
+Gracefully stopping... (press Ctrl+C again to force)

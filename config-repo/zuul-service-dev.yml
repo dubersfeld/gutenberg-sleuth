@@ -1,0 +1,49 @@
+server:
+  port: 5555
+    
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411 
+  data:
+    mongodb:
+      uri: mongodb://spring:password1234@books-mongodb:27017/booksonline
+
+zuul:
+  sensitive-headers: 
+  routes:  
+    book-service: /books/**
+    review-service: /reviews/** 
+    order-service: /orders/**       
+    user-service: /users/**   
+  host:
+    connect-timeout-millis: 100000   
+  debug:
+    request: true
+  ribbon:
+    eager-load:
+      enabled: true 
+ 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eurekaserver:8761/eureka/
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+
+
+ribbon:
+  ConnectTimeout:  10000
+  ReadTimeout:  10000
+
+# base server URLs
+baseBooksUrl: http://book-service:8081 
+

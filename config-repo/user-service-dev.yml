@@ -1,0 +1,19 @@
+server:
+  port: 8084
+    
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411 
+  data:
+    mongodb:
+      uri: mongodb://spring:password1234@books-mongodb:27017/booksonline
+    
+          
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eurekaserver:8761/eureka/

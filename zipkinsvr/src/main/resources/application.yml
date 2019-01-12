@@ -1,0 +1,22 @@
+server:
+  port: 9411
+  #port: 9422 
+spring:
+  application: 
+    name: zipkin
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: DEBUG
+    com.dub: DEBUG   
+    
+    
+    
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+        

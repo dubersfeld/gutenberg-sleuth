@@ -1,0 +1,53 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /gutenberg
+
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411
+    # needed to send traces over HTTP rather than over broker
+    sender:
+      type: web 
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: bookChangeTopic
+          content-type: application/json
+          binder: local_rabbit
+      binders:
+        local_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: rabbitmq-server
+                port: 5672
+                username: spring
+                password: password1234
+                virtual-host: /        
+              
+                  
+  # Redis server
+  redis:
+    host: "redis-service"
+    port: "6379"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eurekaserver:8761/eureka/
+
+
+# base server URLs 
+baseBooksUrl: http://zuul-service:5555/books
+baseReviewsUrl: http://zuul-service:5555/reviews
+baseOrdersUrl: http://zuul-service:5555/orders
+baseUsersUrl: http://zuul-service:5555/users
+
+

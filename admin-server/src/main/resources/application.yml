@@ -1,0 +1,23 @@
+spring:
+  zipkin:
+    base-url: "http://zipkin-server:9411"
+    sender:
+      type: web
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: addressChangeTopic
+          content-type: application/json
+          binder: local_rabbit
+      binders:
+        local_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: rabbitmq-server
+                port: 5672
+                username: spring
+                password: password1234
+                virtual-host: /
