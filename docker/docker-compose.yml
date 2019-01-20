@@ -30,7 +30,7 @@ services:
     # edit to match your own filesystem
     volumes:
       - type: bind
-        source: /home/dominique/workspace-gutenberg-sleuth-2/config-repo
+        source: /home/dominique/gutenberg-sleuth/config-repo
         target: /tmp/config-repo
     ports:
       - "8888:8888"
